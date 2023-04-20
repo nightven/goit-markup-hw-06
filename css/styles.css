@@ -9,7 +9,7 @@
   --social-activ-cl: #31d0aa;
   --border-cl: #8e8f99;
   --castomer-cl: #8e8f99;
-  --сubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-role: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --backdrop: rgba(46, 47, 66, 0.4);
 }
 html {
@@ -160,7 +160,7 @@ img {
   letter-spacing: 0.02em;
 
   color: var(--dark-color);
-  transition: color 250ms var(--сubic);
+  transition: color var(--transition-role);
 }
 .list .nav-link:hover,
 .list .nav-link:focus {
@@ -179,7 +179,7 @@ img {
   gap: 40px;
 }
 .address-item {
-  transition: color 250ms var(--сubic);
+  transition: color var(--transition-role);
 }
 .address-item:hover,
 .address-item:focus {
@@ -244,7 +244,7 @@ img {
   background-color: var(--primary-barnd-color);
   cursor: pointer;
 
-  transition: background 250ms var(--сubic);
+  transition: background var(--transition-role);
 }
 
 .btn:hover,
@@ -262,7 +262,7 @@ img {
   height: 100%;
 
   background-color: var(--backdrop);
-  transition: opacity 250ms var(--сubic), visibility 250ms var(--сubic);
+  transition: opacity var(--transition-role), visibility var(--transition-role);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -303,7 +303,7 @@ img {
   background-color: #e7e9fc;
   background-size: cover;
 
-  transition: color 250ms var(--сubic), background 250ms var(--сubic);
+  transition: color var(--transition-role), background var(--transition-role);
 }
 .icon-close {
   fill: currentColor;
@@ -477,7 +477,7 @@ img {
 
   border-radius: 50%;
 
-  transition: background 250ms var(--сubic);
+  transition: background var(--transition-role);
 }
 .link-icon:hover,
 .link-icon:focus {
@@ -539,7 +539,7 @@ img {
   border: 1px solid var(--border-cl);
   border-radius: 4px;
 
-  transition: border 250ms var(--сubic), color 250ms var(--сubic);
+  transition: border var(--transition-role), color var(--transition-role);
 }
 .castomers-icon {
   fill: currentColor;
@@ -631,7 +631,7 @@ img {
   background-color: var(--primary-barnd-color);
   background-size: cover;
 
-  transition: background 250ms var(--сubic);
+  transition: background var(--transition-role);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
@@ -671,8 +671,8 @@ img {
   background: var(--light-color);
   color: var(--primary-barnd-color);
 
-  transition: color 250ms var(--сubic), background 250ms var(--сubic), border 250ms var(--сubic),
-    box-shadow 250ms var(--сubic);
+  transition: color var(--transition-role), background var(--transition-role),
+    border var(--transition-role), box-shadow var(--transition-role);
 }
 
 .portfolio-btn:hover,
@@ -721,7 +721,7 @@ img {
 }
 .card .link {
   display: block;
-  transition: box-shadow 250ms var(--сubic);
+  transition: box-shadow var(--transition-role);
 }
 .card .link:hover,
 .card .link:focus {
@@ -752,7 +752,7 @@ img {
 
   background-color: var(--primary-barnd-color);
   transform: translateY(100%);
-  transition: transform 250ms var(--сubic);
+  transition: transform var(--transition-role);
 }
 .card:hover .overlay {
   transform: translateY(0);
