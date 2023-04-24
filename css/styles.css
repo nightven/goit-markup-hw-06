@@ -565,7 +565,9 @@ img {
 .footer .container {
   display: flex;
   align-items: baseline;
-  gap: 120px;
+}
+.footer-logo-cont {
+  margin-right: 120px;
 }
 .footer-logo {
   display: inline-block;
@@ -594,6 +596,9 @@ img {
   width: 264px;
 }
 
+.footer-social-cont {
+  margin-right: 80px;
+}
 .footer-social-title {
   font-family: 'Roboto';
   font-style: normal;
@@ -618,6 +623,8 @@ img {
   width: 40px;
   height: 40px;
 }
+/* Social */
+
 .footer-social-link {
   display: flex;
   align-items: center;
@@ -640,6 +647,88 @@ img {
 .footer .icon {
   fill: var(--light-color);
 }
+/* Subscrible */
+
+.subscrible {
+  display: block;
+}
+
+.subscrible-title {
+  /* Body Medium */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.02em;
+
+  margin-bottom: 16px;
+
+  /* WHITE */
+
+  color: var(--background-color);
+}
+.form-sub {
+  width: 240px;
+  height: 40px;
+  padding-left: 16px;
+  border: 1px solid var(--background-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  color: var(--background-color);
+  background-color: var(--dark-color);
+}
+.form-sub::placeholder {
+  display: flex;
+  align-items: center;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.04em;
+
+  /* WHITE */
+
+  color: var(--background-color);
+}
+
+.subscr-btn {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 16px;
+
+  margin-left: 24px;
+
+  /* IRIS */
+
+  background: #4d5ae5;
+  border-radius: 4px;
+  color: var(--background-color);
+  cursor: pointer;
+
+  transition: background var(--transition-role);
+}
+.subscr-btn:hover,
+.subscr-btn:focus {
+  background-color: var(--pressed-state-cl);
+}
+
+.subscr-ikon {
+  fill: var(--background-color);
+}
+.sibscr-svg {
+}
+
 /**
   |============================
   | portfolio page
