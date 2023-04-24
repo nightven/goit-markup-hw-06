@@ -680,6 +680,8 @@ img {
 
   color: var(--background-color);
   background-color: var(--dark-color);
+
+  transition: background var(--transition-role);
 }
 .form-sub::placeholder {
   display: flex;
@@ -690,13 +692,14 @@ img {
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
-  /* identical to box height, or 200% */
 
   letter-spacing: 0.04em;
 
-  /* WHITE */
-
   color: var(--background-color);
+}
+
+.subscrible-form:focus-within > .form-sub {
+  border: 1px solid var(--primary-barnd-color);
 }
 
 .subscr-btn {
