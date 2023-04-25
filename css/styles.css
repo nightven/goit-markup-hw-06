@@ -698,10 +698,6 @@ img {
   color: var(--background-color);
 }
 
-.subscrible-form:focus-within > .form-sub {
-  border: 1px solid var(--primary-barnd-color);
-}
-
 .subscr-btn {
   display: inline-flex;
   flex-direction: row;
@@ -716,6 +712,7 @@ img {
 
   background: #4d5ae5;
   border-radius: 4px;
+  border: none;
   color: var(--background-color);
   cursor: pointer;
 
