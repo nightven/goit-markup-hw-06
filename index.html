@@ -67,7 +67,7 @@
           <!-- button -->
           <button type="button" class="btn" data-modal-open>Order Service</button>
           <div class="backdrop is-hidden" data-modal>
-            <!-- is-hidden -->
+            <!-- modal window -->
             <div class="modal">
               <div class="modal-icon">
                 <button type="button" class="modal-btn" data-modal-close>
@@ -76,7 +76,9 @@
                   </svg>
                 </button>
               </div>
-              <strong class="modal-text">Leave your contacts and we will call you back</strong>
+
+              <p class="modal-text">Leave your contacts and we will call you back</p>
+              <!-- modal form -->
               <form class="modal-form">
                 <label class="modal-form-fild">
                   <span class="modal--form-input-descr">Name</span>
@@ -106,7 +108,7 @@
                     <use href="./images/icon.svg#icon-email"></use>
                   </svg>
                 </label>
-                <label class="modal-form-fild">
+                <label class="modal-form-area">
                   <span class="modal--form-input-descr">Comment</span>
                   <textarea
                     name="user_message"
@@ -572,7 +574,13 @@
           <h2 class="subscrible-title">Subscribe</h2>
           <form action="subscrible-form">
             <label class="subscrible-label">
-              <input type="email" class="form-sub" name="Email" placeholder="Email" />
+              <input
+                type="email"
+                class="form-sub"
+                name="Email"
+                placeholder="Email"
+                aria-label="email"
+              />
             </label>
             <button class="subscr-btn" type="submit">
               Subscrible
