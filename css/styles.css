@@ -301,7 +301,6 @@ img {
 
   width: 100%;
   height: 100%;
-  margin-bottom: 24px;
 
   border: none;
   border-radius: 50%;
@@ -888,7 +887,7 @@ img {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 8px 24px;
+  padding: 6px 24px;
   gap: 16px;
 
   margin-left: 24px;
